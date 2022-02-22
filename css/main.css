@@ -83,9 +83,130 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/* =====================BASE BODY========================================*/
+
+.content-wrapper{
+
+}
+/*==============BASE HEADER AND FOOTER STYLES=================================*/
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+/*==============HEADER=================================*/
+
+header{
+
+}
+
+.header-divider{
+
+}
+
+nav{
+
+}
+
+.hero-area{
+
+}
+
+/*==============NEWSLETTER=================================*/
+
+main{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.content{
+
+}
+
+.aside{
+
+}
+
+.newsletter{
+
+}
+
+.form-description{
+
+}
+
+.form{
+
+}
+
+/*==============FEATURES=================================*/
+
+
+.features{   
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+.feature-items{
+
+}
+
+.fontawesome-icon{
+
+}
+
+.features-item-description{
+
+}
+
+
+/*==============REVIEWS=================================*/
+
+.reviews{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+/*==============FOOTER=================================*/
+
+footer{
+
+}
+
+.contact{
+
+}
+
+address{
+
+}
+
+.socials{
+
+}
+
+.social-icons{
+
+}
+
+span{
+
+}
 
 /* ==========================================================================
    Helper classes
