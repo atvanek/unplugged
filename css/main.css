@@ -97,6 +97,7 @@ body {
 
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
  
 }
  
@@ -185,7 +186,8 @@ address {
   /*==============HEADER=================================*/
   
   header{
-    margin: 15px 0;
+    padding: 15px 0;
+    background: #202322;
   
   }
 
@@ -239,9 +241,36 @@ address {
     
     display: flex;
     justify-content: center;
+    background: #527158;
   
   }
+
+  aside .form {
+    margin-top: 30px;
+  }
+   
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+   
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
   
+  }
   .newsletter{
   
   }
@@ -294,6 +323,7 @@ address {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background: #2a423a;
   
   }
   
@@ -302,7 +332,11 @@ address {
   footer .content-wrapper{
 
     width: 55%;
-  
+    padding: 5.4em 0;
+  }
+
+  footer{
+    background: #202322;
   }
   
   .contact{
@@ -533,9 +567,18 @@ address {
           flex-flow: row nowrap;
           justify-content: space-between;
       }
+
+      section.mission{
+        background: #527158;
+
+      }
+
       p.mission-body{
             width: 45%;
       }
+    section.contact-section {
+    background: #2a423a;
+    }
 
     .general{
       display: flex;
@@ -551,6 +594,11 @@ address {
     }
   /***********FAQ PAGE**********/
 
+  .faq{
+    background: #527158;
+
+  
+  }
   .faq .content-wrapper {
     justify-content: space-between;
 }
@@ -570,24 +618,54 @@ address {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-around;
+      align-items: flex-start;
   }
 
-  .form-description, .form{
-    width: 30%;
-  }
   
+  div.form, div.form-description {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 30%;
+  }
+
+  aside .form {
+    margin-top: 0px;
+
+  }
+
+  section.features {
+    padding: 6.25em 0;
+  }
+
+  section.mission{
+    padding: 6.25em 0;
+  }
+
+  section.contact-section{
+    
+    padding: 6.25em 0;
+
+  }
 
   .feature-items{
     justify-content: space-around;
   }
 
   .feature-items article {
-    flex-basis: 20%;
+    flex-basis: 16.5%;
+  }
+  .reviews{
+    padding: 6.25em 0;
   }
 
   .general{
     justify-content: flex-start;
 
+  }
+
+  aside.newsletter{
+    padding: 3.125em 0;
   }
 
   .address-column {
@@ -601,6 +679,8 @@ address {
 
   .faq-content h4 {
     justify-content: flex-start;
+  }
+}
 
   @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
