@@ -484,9 +484,39 @@
 
   @media only screen and (min-width: 1200px)
   {
+    #form-box.content-wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+  }
 
+  .form-description, .form{
+    width: 30%;
   }
   
+
+  .feature-items{
+    justify-content: space-around;
+  }
+
+  .feature-items article {
+    flex-basis: 20%;
+  }
+
+  .general{
+    justify-content: flex-start;
+
+  }
+
+  .address-column {
+    padding-right: 30%;
+  }
+
+  .footer-content {
+    justify-content: space-around;
+    width: 83%;
+  }
+
   @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
     (min-resolution: 1.25dppx),
