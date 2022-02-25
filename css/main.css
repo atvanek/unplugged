@@ -432,6 +432,22 @@ address {
       margin: 0;
      }
 
+.map-container {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 125%; 
+    overflow: hidden;
+    position: relative;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+}
+
      footer .content-wrapper {
        width: 90%;
        justify-content: center;
@@ -687,6 +703,10 @@ figure, .review-text {
 
       }
 
+      .map-container{
+        padding-bottom: 50%;
+      }
+
       p.mission-body{
             width: 45%;
       }
@@ -738,6 +758,14 @@ figure, .review-text {
   @media only screen and (min-width: 1200px)
   {
 
+    .map-container{
+      padding-bottom: 40%;
+    }
+
+.content-wrapper{
+  padding: 0;
+}
+
     p{
       font-size: 1em;
 
@@ -747,12 +775,15 @@ figure, .review-text {
       font-size: 3.333em;
     }
 
+
+
     header .content-wrapper{
       padding: 0;
     }
 
     h3{
       margin: 0;
+      font-size: 1.666em;
     }
 
     .hero-area{
@@ -804,6 +835,11 @@ figure, .review-text {
   }
   .reviews{
     padding: 6.25em 0;
+  }
+
+  .review-text{
+    width: 40%;
+    padding-left: 50px;
   }
 
   .reviews article {
