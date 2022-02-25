@@ -115,9 +115,10 @@ a {
 
  h1{
 
-  font-size: 3.333em;
+  font-size: 2.5em;
   font-family: "Poppins";
   font-weight: 500;
+  margin: 0
 
  }
 
@@ -126,6 +127,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2em;
   font-weight: 500;
+  margin: 0;
  
 }
  
@@ -135,6 +137,7 @@ h3
   font-family: 'Poppins', sans-serif;
   font-size: 1.666em;
   font-weight: 500;
+  margin: 0;
  
 }
 
@@ -143,6 +146,7 @@ h4{
   font-family: 'Poppins',sans-serif;
   font-size: 1em;
   font-weight: 500;
+  margin: 0;
 }
  
 p {
@@ -170,8 +174,17 @@ address {
   
   .content-wrapper{
     width: 90%;
-    margin: 50px 0;
+    padding: 50px 0;
   
+  }
+
+  img{
+    width: 100%;
+    margin: 0;
+  }
+
+  figure{
+    margin: 0;
   }
   /*==============BASE HEADER AND FOOTER STYLES=================================*/
   
@@ -191,17 +204,37 @@ address {
   
   }
 
+
   header .content-wrapper{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    padding: 0;
   }
   
   .header-divider{
     width: 100%;
   
   }
-  
+
+  .hero-area{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    background-image: url('../img/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+
+  }
+
+  .hero-area h1{
+      width: 95%;
+  }
+
+
   nav{
     width: 60%;
     display: flex;
@@ -212,11 +245,17 @@ address {
   nav ul {
   
     display: flex;
-    padding: 20px 0;
+    padding: 0;
     flex-flow: row nowrap;
     width: 100%;
     justify-content: space-around;
+    text-transform: uppercase;
+    font-weight: 700;
 }
+
+  ul{
+    margin: 0;
+  }
   
   
   /*==============NEWSLETTER=================================*/
@@ -229,13 +268,8 @@ address {
     flex-flow: row wrap;
   }
   
-  .hero-area{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  
-  }
+
+
   
   aside.newsletter{
     
@@ -296,6 +330,17 @@ address {
   
   }
 
+  .feature-items{
+    padding: 50px 0;
+  }
+
+  section.features{
+    background-image: url('../img/feature-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 
 
 
@@ -305,6 +350,11 @@ address {
     
     width: 65%;
   
+  }
+
+  figure, article{
+    padding: 20px 0;
+
   }
   .fontawesome-icon{
   
@@ -330,16 +380,20 @@ address {
   /*==============FOOTER=================================*/
   
   footer .content-wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 
-    width: 55%;
-    padding: 5.4em 0;
   }
 
   footer{
     background: #202322;
   }
   
-  .contact{
+  .contact, .socials{
+    text-align: center;
+    padding: 20px 0;
   
   }
   
@@ -366,6 +420,7 @@ address {
      section.mission {
       display: flex;
       justify-content: center;
+      background: #527158;
      }
 
      section.contact-section {
@@ -391,7 +446,14 @@ address {
   
      h4 {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
+      font-size: 1.5em;
+     }
+
+     h5{
+       display: flex;
+       justify-content: center;
+       font-size: 1.5em;
      }
 
      address p {
@@ -399,6 +461,11 @@ address {
       text-align: center;
      }
 /**********FAQ PAGE*******/
+
+main.faq{
+  background: #527158;
+
+}
 
 .faq {
   display: flex;
@@ -420,8 +487,13 @@ address {
 }
 
 .faq-content {
-  margin-bottom: 50px;
+  padding: 50px 0;
 }
+
+section.contact-section{
+  background: #2a423a;
+}
+
   /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -512,6 +584,10 @@ address {
   
   @media only screen and (min-width: 768px) {
   
+    p{
+      font-size: .78em;
+    }
+
       .content-wrapper{
         width: 83%;
   }
@@ -521,7 +597,29 @@ address {
   }
       .hero-area{
         width: 100%;
+        height: 520px;
       }
+
+      aside .form{
+        margin: 0;
+
+      }
+
+      .form, .form-description{
+        width: 45%;
+
+      }
+
+      h3{
+        font-size: 1.25em;
+      }
+
+
+figure, .review-text {
+  padding: 0 15px;
+}
+
+
 
       aside.newsletter{
         width: 100%}
@@ -529,12 +627,18 @@ address {
         aside .content-wrapper{
           display: flex;
           flex-flow: row nowrap;
+          justify-content: space-between;
         }
 
         .feature-items{
           align-items: flex-start;
 
         }
+
+    article{
+      display: flex;
+      flex-flow: row nowrap;
+    }
 
       .feature-items article {
         flex-basis: 30%;
@@ -549,6 +653,16 @@ address {
         width: 100%;
       }
     
+      figure{
+        width: 50%;
+      }
+      
+
+      .review-text{
+        width: 50%;
+      }
+
+
       span{
 
         padding: 0 15px;
@@ -584,6 +698,7 @@ address {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
+      padding: 40px 0;
     }
 
     .footer-content{
@@ -601,19 +716,50 @@ address {
   }
   .faq .content-wrapper {
     justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0 0 20px 0;
 }
 
 .faq-content {
     flex-basis: 40%;
+    padding: 0;
 }
 
 .faq h2 {
     width: 100%;
   }
-}
+
+  h1{
+    padding: 30px 0;
+  }
+
 
   @media only screen and (min-width: 1200px)
   {
+
+    p{
+      font-size: 1em;
+
+    }
+    
+    h1{
+      font-size: 3.333em;
+    }
+
+    header .content-wrapper{
+      padding: 0;
+    }
+
+    h3{
+      margin: 0;
+    }
+
+    .hero-area{
+      min-height: 600px;
+ 
+
+    }
     #form-box.content-wrapper {
       display: flex;
       flex-flow: row nowrap;
@@ -635,7 +781,7 @@ address {
   }
 
   section.features {
-    padding: 6.25em 0;
+    padding: 100px 0;
   }
 
   section.mission{
@@ -650,6 +796,7 @@ address {
 
   .feature-items{
     justify-content: space-around;
+    padding: 40px 0;
   }
 
   .feature-items article {
@@ -657,6 +804,25 @@ address {
   }
   .reviews{
     padding: 6.25em 0;
+  }
+
+  .reviews article {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 60px 0;
+  }
+
+  figure, article div {
+    width: 40%;
+
+  }
+
+  figure{
+    padding: 0;
+  }
+  article div{
+    width: 45%;
+    padding-left: 60px;
   }
 
   .general{
@@ -680,7 +846,12 @@ address {
   .faq-content h4 {
     justify-content: flex-start;
   }
-}
+
+  .review-text p {
+    font-size: 1em;
+  }
+
+
 
   @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
@@ -763,4 +934,3 @@ address {
       page-break-after: avoid;
     }
   }
-  
